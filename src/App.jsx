@@ -10,21 +10,22 @@ import Student from "./pages/Student";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Faculty from "./pages/Faculty";
+import NCC from './pages/NCC';
 
 function App() {
   return (
     <>
       <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/acet" element={<Acet />} />
-          <Route path="/students" element={<Student />} />
-          <Route path="/faculty" element={<Faculty />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/acet" element={<Acet />} />
+        <Route path="/students" element={<Student />} />
+        <Route path="/faculty" element={<Faculty />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/NCC" element={<NCC />} />
+
+      </Routes>
       <Footer />
     </>
   );
