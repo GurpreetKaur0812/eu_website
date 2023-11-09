@@ -1,7 +1,8 @@
+// ExpandableMenuItem.js
 import React, { useState } from 'react';
 import '../pages/About.css';
 
-const ExpandableMenuItem = ({ title, paragraph }) => {
+const ExpandableMenuItem = ({ title, content }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -16,14 +17,9 @@ const ExpandableMenuItem = ({ title, paragraph }) => {
           {expanded ? '-' : '+'}
         </button>
       </div>
-      {expanded && (
-        <div className="content">
-          <p>{paragraph}</p>
-        </div>
-      )}
+      {expanded && <div className="content">{content}</div>}
     </div>
   );
 };
 
 export default ExpandableMenuItem;
-

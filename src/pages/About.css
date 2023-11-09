@@ -1,48 +1,50 @@
 /* App.css */
 .App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 100px;
-    font-family: sans-serif;
-  }
-  
-  /* Update the ExpandableMenuItem.css */
-  .expandable-menu-item {
-    max-width: 300px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f0f0f0;
-    align-items: center;
-  }
-  
-  .title {
-    font-weight: bold;
-  }
-  
-  .expand-button {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .expandable-menu-item.expanded {
-    max-height: 500px; /* Adjust the maximum height for the expanded state */
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #f9ddcb;
+}
+
+/* ExpandableMenuItem.css */
+.expandable-menu-item {
+  width: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 1px solid #a45d2e;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #f4dcce;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8d7c2;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.expand-button {
+  background-color: #f8d7c2;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.expandable-menu-item.expanded {
+  max-height: 800px; /* Adjust the maximum height for the expanded state */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
